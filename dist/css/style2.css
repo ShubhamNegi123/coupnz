@@ -1,0 +1,66 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+header {
+    background-color: #2f3c97;
+}
+
+.loginBtn {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.headerSearchBtn {
+    background-color: #eb6a07;
+}
+
+.owl-item {
+    margin-right: 0;
+}
+
+.owl-nav {
+    position: absolute;
+    /* left: -12px; */
+    left: -1%;
+    top: 50%;
+    transform: translate(-0, -50%);
+    /* background-color: red; */
+    width: 101%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-nav button {
+    /* backdrop-filter: blur(10px); */
+    /* background-color: rgba(255, 255, 255, .8); */
+    background-color: #eb6a07 !important;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #fff !important;
+}
+
+.owl-nav button i {
+    color: #fff;
+}
+
+.mainSlidingScrollbar::-webkit-scrollbar {
+    display: none;
+}
+.navSlidingBtns i{
+    background-color: #2f3c97;
+    color: #fff;
+}
+nav {
+    background-color: #2f3c97;
+}
