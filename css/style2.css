@@ -1,0 +1,87 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.loginBtn {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.headerSearchBtn {
+    background-color: #eb6a07;
+}
+
+.owl-item {
+    margin-right: 0;
+}
+
+.owl-nav {
+    position: absolute;
+    left: -1%;
+    top: 50%;
+    transform: translate(-0, -50%);
+    width: 102%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-nav button i {
+    color: #fff;
+}
+
+.owl-nav button {
+    background-color: #eb6a07 !important;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #fff !important;
+}
+.favouritesSlider .owl-nav button {
+    background-color: #2f3c97 !important;
+}
+.vouchersSlider .owl-nav button {
+    background-color: #fff !important;
+    border-radius: 0px;
+}
+.vouchersSlider .owl-nav button i {
+    color: #000;
+}
+
+.mainSlidingScrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.navSlidingBtns i {
+    background-color: #2f3c97;
+    color: #fff;
+}
+
+nav {
+    background-color: #2f3c97;
+}
+
+.mailSlidingUl li ul {
+    background-color: #fff;
+}
+
+.mailSlidingUl li ul li {
+    border-bottom: 1px solid rgba(235, 105, 7, 0.3);
+}
+.mailSlidingUl li ul li a{
+    display: block;
+    width: 100%;
+    transition: all .3s ease;
+}
+.mailSlidingUl li ul li a:hover{
+    background-color: #eee;
+    transition: all .3s ease;
+}
+
+.mailSlidingUl li ul li:last-child {
+    border-bottom: none;
+}
