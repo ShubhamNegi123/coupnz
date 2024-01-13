@@ -123,15 +123,25 @@ $(document).ready(function () {
         let SerchInput = $('.mobileSearchWrapper input').val();
         searchFunctionality(SerchInput)
     })
+    $(document).on('focus', '.footerNewslatter input', function () {
+        $('.newsLatterError').hide()
+    })
     $(document).on('click', '.newsLatterSubmit', function () {
         let email = $('.footerNewslatter input').val();
+        let emailRegx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
         if (email.trim() == '') {
-            $('.searchWrapper input').addClass('animate__animated animate__shakeX');
-            setTimeout(() => {
-                $('.searchWrapper input').removeClass('animate__animated animate__shakeX');
-            }, 1200)
-        } else {
+            $('.newsLatterError').show().html('Please Enter Your Email Address')
+        } else if (emailRegx.test(email)) {
+            console.log("email valid");
+            $('.newsLatterError').hide()
             // your ajax code
+            /* ajax before send  
+             $('.footerNewslatter').css({opacity:'0.3'}) */
+            //  =======================
+            /* when ajax complete do it  
+            $('.footerNewslatter').css({opacity:'1'}) */
+        } else {
+            $('.newsLatterError').show().html('Please Enter Valid Email Address')
         }
     })
 

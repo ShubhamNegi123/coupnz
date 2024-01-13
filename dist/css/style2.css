@@ -90,7 +90,11 @@ nav {
 .mailSlidingUl li ul li:last-child {
     border-bottom: none;
 }
-
+.footerNewslatter input::selection {
+    background-color: yellow;
+    color: black; /* Optionally, you can set the text color */
+  }
+  
 @media screen and (max-width:767px) {
     .owl-nav button {
         background-color: #eb6a07 !important;

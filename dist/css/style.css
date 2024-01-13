@@ -1164,6 +1164,11 @@ video {
   color: rgb(235 106 7 / var(--tw-text-opacity));
 }
 
+.focus\:bg-yellow-100:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+}
+
 .group:hover .group-hover\:block {
   display: block;
 }
