@@ -20,32 +20,25 @@
     <header class="flex items-center py-2 bg-[#2f3c97]">
         <div class="px-5 w-full  flex items-center justify-between">
             <div class="logo">
-                <img src="./images/logo.png" width="200" alt="logo">
+                <img src="./images/logo.png" class="lg:w-[200px] md:w-[160px] w-[130px] "  alt="logo">
             </div>
-            <div class="w-[40%]">
+            <div class="w-[40%] hidden sm:block">
                 <div class="text-white text-sm font-medium w-full flex items-center justify-center">
                     <input
-                        class="border-none outline-none shadow-none  bg-white py-2 pl-4  pr-2 w-full placeholder: placeholder:font-normal placeholder:text-xs placeholder:tracking-widest h-full rounded-l-[20px] text-black"
+                        class="border-none outline-none shadow-none  bg-white py-2 pl-4  pr-2 w-full placeholder: placeholder:font-normal placeholder:text-xs placeholder:tracking-widest md:h-[33px] h-[25px] rounded-l-[20px] text-black"
                         type="search" placeholder="Search for iPhone, Flipkart, Swiggy, Recharge & more">
                     <button
-                        class="flex items-center justify-center h-[33px]   py-2 px-4 headerSearchBtn  text-white rounded-r-[20px] font-medium text-sm tracking-widest">
+                        class="flex items-center justify-center md:h-[33px] h-[25px]   py-2 px-4 headerSearchBtn  text-white rounded-r-[20px] font-medium text-sm tracking-widest">
                         <i class="fa-solid fa-magnifying-glass cursor-pointer "></i>
-                        <span class="pl-3 mt-[2px]">Search</span>
+                        <span class="pl-0 lg:pl-3 mt-[2px] hidden lg:block ">Search</span>
                     </button>
                 </div>
-                <!-- <ul class="flex items-center justify-between text-white text-sm font-medium">
-                    <li class="mx-4">About Us</li>
-                    <li class="mx-4">Contact Us</li>
-                    <li class="mx-4">Blog</li>
-                    <li class="mx-4">Top Store</li>
-                    <li class="mx-4">
-                    </li>
-                </ul> -->
             </div>
-            <div class="">
+            <div class="flex items-center">
+                <i class="fa-solid fa-magnifying-glass cursor-pointer flex items-center justify-center mr-3 cursor-pointer text-white rounded-[20px] text-xs border w-[30px] h-[30px]"></i>
                 <button
-                    class="px-8 text-white rounded-[20px]  flex justify-center items-center h-[33px] text-sm tracking-widest loginBtn"><i
-                        class="fa-solid fa-user mr-2"></i><span class="mt-[3px]"> Login/Sign up</span></button>
+                    class="lg:px-8 md:px-5 sm:px-3  p-2 text-white rounded-[20px]  flex justify-center items-center md:h-[33px] sm:h-[25px]  text-xs md:text-sm tracking-widest loginBtn"><i
+                        class="fa-solid fa-user sm:mr-2"></i><span class="md:mt-[3px] hidden sm:block"> Login/Sign up</span></button>
             </div>
         </div>
     </header>
@@ -343,7 +336,7 @@
     </section>
 
     <section class="middleBanner  py-12 w-full m-auto">
-        <a href=""><img class="w-full" src="./images/middleBanner.jpg" alt="banner"></a>
+        <a href=""><img class="w-full min-h-[200px]" src="./images/middleBanner.jpg" alt="banner"></a>
     </section>
 
     <h2
@@ -452,29 +445,30 @@
     </section>
 
     <section class="bottomBanners  py-12 w-full m-auto">
-        <div class="flex item-center justify-between">
-            <div class="w-[32%]">
+        <div class="flex item-center justify-between flex-wrap">
+            <div class="lg:w-[32%] sm:w-[48%] w-full ">
                 <img class="w-full h-56" src="./images/banner31.jpg" alt="banner">
             </div>
-            <div class="w-[32%]">
+            <div class="lg:w-[32%] sm:w-[48%]  w-full mt-5  sm:mt-0">
                 <img class="w-full h-56" src="./images/banner32.png" alt="banner">
             </div>
-            <div class="w-[32%]">
+            <div class="lg:w-[32%] sm:w-[48%]  w-full  mt-5 lg:mt-0">
                 <img class="w-full h-56" src="./images/banner33.png" alt="banner">
             </div>
         </div>
     </section>
 
+    
     <footer class="bg-[#2f3c97] px-[5%] py-12">
-        <div class="flex  justify-between">
-            <div class="w-[30%]">
-                <img src="./images/logo.png" class="w-2/4" alt="logo">
-                <p class="text-white my-3">Dive into a realm of exclusive offers and unbeatable discounts. Experience
+        <div class="flex flex-wrap justify-between">
+            <div class="lg:w-[30%] sm:w-[48%]  w-full">
+                <img src="./images/logo.png" class="w-2/4 m-auto sm:m-0" alt="logo">
+                <p class="text-white my-3 text-center sm:text-left">Dive into a realm of exclusive offers and unbeatable discounts. Experience
                     top-notch quality at affordable prices. Join our community for curated deals, making every purchase
                     a delight. Elevate your shopping with KUPNZ, where savings meet satisfaction. Your go-to destination
                     for unparalleled value. </p>
             </div>
-            <div class="w-[20%]">
+            <div class="lg:w-[20%] w-[48%] mt-10 lg:mt-0">
                 <h2 class="text-[#eb6a07] text-lg font-semibold">QUICK LINKS</h2>
                 <ul class="text-white font-normal mt-3">
                     <li><a class="py-[3px] inline-block" href="">About Us</a></li>
@@ -485,7 +479,7 @@
                     <li><a class="py-[3px] inline-block" href="">Terms & Conditions</a></li>
                 </ul>
             </div>
-            <div class="w-[15%]">
+            <div class="lg:w-[15%] w-[48%] mt-10 lg:mt-0">
                 <h2 class="text-[#eb6a07] text-lg font-semibold">POPULAR </h2>
                 <ul class="text-white font-normal mt-3">
                     <li><a class="py-[3px] inline-block" href="">Amazon</a></li>
@@ -496,7 +490,7 @@
                     <li><a class="py-[3px] inline-block" href="">Food & Dining</a></li>
                 </ul>
             </div>
-            <div class="w-[25%]">
+            <div class="lg:w-[25%] sm:w-[48%]  w-full mt-10 lg:mt-0">
                 <h2 class="text-[#eb6a07] text-lg font-semibold">NEWSLATTER</h2>
                 <div class="flex items-center relative mt-5">
                     <i class="fa-regular fa-envelope text-white  absolute top-2/4 -translate-y-2/4 left-0"></i>

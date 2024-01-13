@@ -41,13 +41,16 @@
     border-radius: 50%;
     border: 1px solid #fff !important;
 }
+
 .favouritesSlider .owl-nav button {
     background-color: #2f3c97 !important;
 }
+
 .vouchersSlider .owl-nav button {
     background-color: #fff !important;
     border-radius: 0px;
 }
+
 .vouchersSlider .owl-nav button i {
     color: #000;
 }
@@ -72,16 +75,31 @@ nav {
 .mailSlidingUl li ul li {
     border-bottom: 1px solid rgba(235, 105, 7, 0.3);
 }
-.mailSlidingUl li ul li a{
+
+.mailSlidingUl li ul li a {
     display: block;
     width: 100%;
     transition: all .3s ease;
 }
-.mailSlidingUl li ul li a:hover{
+
+.mailSlidingUl li ul li a:hover {
     background-color: #eee;
     transition: all .3s ease;
 }
 
 .mailSlidingUl li ul li:last-child {
     border-bottom: none;
+}
+
+@media screen and (max-width:767px) {
+    .owl-nav button {
+        background-color: #eb6a07 !important;
+        width: 30px;
+        height: 30px;
+    }
+
+    .owl-nav button i {
+        font-size: 14px;
+    }
+
 }
