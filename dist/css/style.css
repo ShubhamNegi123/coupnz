@@ -1321,6 +1321,10 @@ video {
   padding: 2rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
 .px-11 {
   padding-left: 2.75rem;
   padding-right: 2.75rem;
@@ -1744,6 +1748,10 @@ video {
     height: 25px;
   }
 
+  .sm\:h-56 {
+    height: 14rem;
+  }
+
   .sm\:max-h-44 {
     max-height: 11rem;
   }
@@ -1778,6 +1786,10 @@ video {
 
   .sm\:border-t-0 {
     border-top-width: 0px;
+  }
+
+  .sm\:p-5 {
+    padding: 1.25rem;
   }
 
   .sm\:px-3 {
