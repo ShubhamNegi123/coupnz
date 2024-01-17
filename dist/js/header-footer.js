@@ -22,6 +22,9 @@ $(document).ready(function () {
         let height = $(this).find('ul').innerHeight();
         $('.mailSlidingUl').height(height + 30);
     })
+    $(document).on('mouseout', '.mailSlidingUl li.group', function () {
+        $('.mailSlidingUl').height('auto');
+    })
 
     $(document).on('click', '.showMobileSearchBox', function () {
         $('.mobileSearchWrapper').slideToggle()
