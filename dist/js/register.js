@@ -96,6 +96,7 @@ $(function () {
             },
             mobile: {
                 required: "Please Enter Your Mobile Number",
+                number: "Please Enter valid Mobile Number",
             },
             password: {
                 required: "Please Enter Password",
