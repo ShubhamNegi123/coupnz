@@ -275,8 +275,8 @@
                         alt="productImg">
                 </div>
                 <div class="w-full max-h-[327px] border overflow-hidden">
-                    <img class="rightSideImg w-full h-full object-contain border-b my-2 p-1"
-                        src="./images/p1.jpeg" alt="productImg">
+                    <img class="rightSideImg w-full h-full object-contain border-b my-2 p-1" src="./images/p1.jpeg"
+                        alt="productImg">
                 </div>
             </div>
             <div class="sm:flex justify-between my-2">
@@ -327,13 +327,13 @@
                 muscle-building protein</p>
             <div class="sm:flex md:justify-end  my-2 ">
                 <button
-                class=" bg-transparent hover:bg-[#eb6a07] w-full sm:w-48  hover:text-white transition-all delay-75 py-1 font-[500] border flex items-center justify-center  px-10 text-slate-700 rounded-sm text-center mr-5">
-                <span class="">Share now</span>
-            </button>
-            <button
-                class="grabDealBtn bg-[#eb6a07] mt-3 sm:mt-0  w-full sm:w-48 font-[500] py-1 flex items-center justify-center  px-10 text-white  rounded-sm text-center">
-                <span>Grab Deal</span>
-            </button>
+                    class=" bg-transparent hover:bg-[#eb6a07] w-full sm:w-48  hover:text-white transition-all delay-75 py-1 font-[500] border flex items-center justify-center  px-10 text-slate-700 rounded-sm text-center mr-5">
+                    <span class="">Share now</span>
+                </button>
+                <button
+                    class="grabDealBtn bg-[#eb6a07] mt-3 sm:mt-0  w-full sm:w-48 font-[500] py-1 flex items-center justify-center  px-10 text-white  rounded-sm text-center">
+                    <span>Grab Deal</span>
+                </button>
             </div>
         </div>
     </section>
@@ -686,17 +686,22 @@
     </section>
 
 
-    <section class="redirectionPopup z-50 w-full h-lvh fixed top-0 left-0 hidden items-center justify-center bg-[rgba(0,0,0,0.5)]">
-        <div class="bg-white lg:w-2/5 md:w-2/4 sm:w-3/4 w-[95%] p-5 text-center rounded-md relative">
+    <section
+        class="redirectionPopup z-50 w-full h-lvh hidden fixed top-0 left-0  items-center justify-center bg-[rgba(0,0,0,0.5)]">
+        <div class="bg-white box lg:w-2/5 md:w-2/4 sm:w-3/4 w-[95%] p-5 text-center rounded-md relative">
             <i class="fa-solid fa-xmark closeRDPopup absolute right-3 top-1 cursor-pointer text-lg"></i>
             <h2 class="text-2xl font-semibold">Congratulations! </h2>
             <h3 class="">You're only one step away from earning <strong class="text-lg">₹116.42!</strong> </h3>
             <div class="flex justify-center my-4">
                 <a href="" class="px-5 py-2  mr-5 border text-xs text-white bg-[#eb6a07] rounded-sm">Sign Up</a>
                 <a href=""
-                    class="px-5 py-2  bg-[#2f3c97] text-xs text-white   hover:border-slate-300 border border-white rounded-sm"> Already Menber? Login</a>
+                    class="px-5 py-2  bg-[#2f3c97] text-xs text-white   hover:border-slate-300 border border-white rounded-sm">
+                    Already Menber? Login</a>
             </div>
-            <a href="" class="text-blue-500 underline text-sm">Continue Without Profit</a>
+            <a href="javascript:void(0)" class="redirectBtn text-blue-500 underline text-sm">Continue Without Profit</a>
+        </div>
+        <div class="bg-white hidden loadingPopup box lg:w-2/5 md:w-2/4 sm:w-3/4 w-[95%] p-0 text-center rounded-md relative">
+            <img class="w-2/4 m-auto" src="./images/loading.gif" alt="loader">
         </div>
     </section>
 

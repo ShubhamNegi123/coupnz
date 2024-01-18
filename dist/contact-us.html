@@ -23,7 +23,7 @@
     </style>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header-footer.css">
-    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/contact-us.css">
 </head>
 
 <body class="bg-[#eee]">
@@ -262,122 +262,171 @@
 
 
 
-    <section class="mb-3  sm:mx-5 mx-2 md:mt-[150px] mt-[100px]">
-        <div class="lg:m-20  flex bg-white items- justify-center">
-            <div
-                class="w-2/4 hidden md:block bg-[url('../images/loginImg.png')] py-48 lg:px-10 md:px-2 text-center text-white bg-cover bg-no-repeat shadow-xl">
-                <p class="font-semibold"> BEGIN YOUR ADVENTURE</p>
-                <h2 class="uppercase font-bold text-4xl my-3">WELCOME ABOARD</h2>
-                <p class="px-5 text-sm">"Embark on a journey of endless possibilities with KUPNZ's exclusive vouchers
-                    and cards. Discover a world where unbeatable discounts and top-notch quality meet affordability.
-                    Join our community for handpicked deals, transforming each purchase into a delightful experience.
-                    Embrace the synergy of savings and satisfaction with KUPNZ – your ultimate destination for
-                    unparalleled value. Start your journey today, and let the savings and rewards elevate your shopping
-                    experience!"</p>
+    <section class="homeSec  mb-3 sm:mx-5 mx-2 mt-[100px]">
+        <div class="bg-white text-center px-5 py-8">
+            <h2 class="text-3xl font-semibold text-[#2f3c97]">Get In Touch</h2>
+            <p class="text-sm lg:w-2/4 m-auto text-slate-800 mt-3">Immerse in exclusive offers and unbeatable discounts
+                with KUPNZ – your go-to for cashback coupons. Elevate your shopping; where savings meet satisfaction.
+            </p>
+        </div>
+    </section>
+    <section class="bg-white lg:w-[80%] lg:mx-auto  mb-3 sm:mx-5 mx-2 mt-5">
+        <div class="flex flex-col md:flex-row">
+            <div class="lg:w-[30%] md:w-[35%] w-full px-5 relative  sm:flex md:block">
+                <div class="border-r-2 hidden md:block absolute top-2/4 right-0 w-[1px] h-[80%] -translate-y-2/4"></div>
+                <div class=" mt-5   w-full sm:w-[30%] md:w-full md:p-5 p-2 text-center">
+                    <i class="fa-regular fa-envelope text-[#2f3c97] text-3xl"></i>
+                    <h2 class="mt-2 font-semibold">Email</h2>
+                    <a class="block text-slate-600 text-sm" href="mailto:coupnz@gmail.com">coupnz@gmail.com</a>
+                    <a class="block text-slate-600 text-sm" href="mailto:help@coupnz.com">help@coupnz.com</a>
+                </div>
+                <div class="  mt-5 md:mt-0 w-full sm:w-[30%] md:w-full md:p-5 p-2 text-center">
+                    <i class="fa-solid fa-phone text-[#2f3c97] text-3xl"></i>
+                    <h2 class="mt-2 font-semibold">Phone </h2>
+                    <a class="block text-slate-600 text-sm" href="tel:+919898562548">9898562548</a>
+                    <a class="block text-slate-600 text-sm" href="tel:+918956452154">8956452154</a>
+                </div>
+                <div class=" mt-5 md:mt-0 w-full sm:w-[40%] md:w-full mb-5 md:p-5 p-2 text-center">
+                    <i class="fa-solid fa-location-dot text-[#2f3c97] text-3xl"></i>
+                    <h2 class="mt-2 font-semibold">Address</h2>
+                    <a class="block text-slate-600 text-sm"
+                        href="https://www.google.com/maps/place/India+Gate/@28.6129166,77.2248963,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce2daa9eb4d0b:0x717971125923e5d!8m2!3d28.612912!4d77.2295097!16zL20vMDM1bWMz?entry=ttu">Office
+                        No. 5124, 91 Floor, Tower-Z, XYZ TOWER, Sector 62, Noida, Uttar
+                        Pradesh 201301</a>
+                </div>
             </div>
-            <div class="md:w-2/4 sm:w-11/12 p-5 md:p-0 mt-5">
-                <div class="text-center lg:w-9/12 md:w-11/12  m-auto ">
-                    <h2 class="text-3xl font-bold text-[#2f3c97]"> Create Your Account</h2>
-                    <p class="text-slate-600 text-sm my-3">Unlock Savings & Rewards! Dive into curated deals at KUPNZ,
-                        where every sign-up is a step towards smart shopping and exceptional value. Your new beginning
-                        awaits – join now and be part of a community that values your savings and satisfaction.</p>
-                    <form class="sm:mx-10 mx-0 mt-10" id="registerForm">
-                        <div class="form-group">
-                            <input type="text" id="fullName" name="fullName" placeholder="Full Name"
-                                class="form-control h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" minlength="4" id="email" name="email" placeholder="Email"
-                                class="form-control h-9 border-l-8 mt-4 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" minlength="10"  maxlength="10" id="mobile" name="mobile" placeholder="Mobile Number" onkeypress="return numOnly(event)"
-                                class="form-control h-9 border-l-8 mt-4 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
-                        </div>
-                        <div class="form-group relative">
-                            <i
-                                class="fa-regular fa-eye showPassword absolute right-2 top-5 text-[#eb6a07] text-lg cursor-pointer"></i>
-                            <input type="password" minlength="4" id="password" name="password" placeholder="Password"
-                                class="form-control h-9 border-l-8 mt-4 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="refferal" name="refferal" placeholder="Refferal Code"
-                                class="form-control h-9 border-l-8 mt-4 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
-                        </div>
-                        <div class="form-group text-xs mt-3 ">
-                            <div class="flex text-left items-start">
-                                <input type="checkbox" id="consent1" name="consent1"
-                                    class="form-control mr-2  mt-[2px]">
-                                <label for="consent1">I agree to the <a class=" text-blue-500" href="">Terms &
-                                        Conditions</a> and <a class=" text-blue-500" href="">Privacy Policy</a> of
-                                    Cupnz.com </label>
-                            </div>
-                        </div>
-                        <div class="form-group text-xs mt-3 flex text-left items-start">
-                            <input type="checkbox" id="consent2" name="consent2" class="form-control mr-2 mt-[2px]">
-                            <label for="consent2">Stay updated with new products and offers!</label>
-                        </div>
-                        <button type="submit"
-                            class="w-full bg-[#2f3c97] h-10 text-white rounded-sm mt-2 font-semibold">Sign Up</button>
-                    </form>
-                    <div class="flex sm:px-10 my-5 items-center"><span class="border-t w-full"></span><span
-                            class="mx-4">OR</span><span class="border-t w-full"> </span></div>
-                    <div class="flex justify-center items-center">
-                        <a href="" class="px-5 py-2 mx-2 rounded-md  bg-slate-100">
-                            <img class="w-6 " src="./images/googleIcon.png" alt="googleIcon">
-                        </a>
-                        <a href="" class="px-5 py-2 mx-2 rounded-md  bg-slate-100">
-                            <img class="w-6 " src="./images/fbIcon.png" alt="fbIcon">
-                        </a>
+            <div class="lg:w-[50%] md:w-[52%] w-[90%] lg:ml-10 ml-5 mb-10 md:mb-0">
+                <h2 class="mt-10 text-[#2f3c97] text-2xl font-semibold text-center md:text-start">Send Us a Message</h2>
+                <p class="text-sm text-slate-600 text-center md:text-start">Have questions or feedback? We'd love to
+                    hear from you! Drop us a
+                    message, and we'll get back to
+                    you promptly.</p>
+                <form class="mt-10" id="contactUsForm">
+                    <div class="form-group">
+                        <input type="text" id="fullName" name="fullName" placeholder="Full Name"
+                            class="form-control h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
                     </div>
-                    <p class="text-slate-600 text-sm my-3">Already have an Account ? <a href=""
-                            class="text-blue-500">Login</a></p>
+                    <div class="form-group">
+                        <input type="email" minlength="4" id="email" name="email" placeholder="Email Address"
+                            class="form-control h-9 border-l-8 mt-4 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" minlength="10" maxlength="10" id="mobile" name="mobile"
+                            placeholder="Mobile Number" onkeypress="return numOnly(event)"
+                            class="form-control h-9 border-l-8 mt-4 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="msg" id="msg" placeholder="Enter Your Message"
+                            class="w-full h-24 form-control pt-2 border-l-8 mt-4 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none resize-none"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-[#2f3c97] h-10 text-white rounded-sm mt-2 font-semibold">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="w-full bg-[url('../images/gradient.jpg')] p-5 bg-no-repeat bg-cover my-5">
+        <h2 class="text-center mb-4 mt-5 text-white font-semibold sm:text-3xl text-xl uppercase">Unlock your profit
+            potential with
+            us!
+        </h2>
+        <h3 class="text-[#eb6a07] text-center my-1 font-semibold sm:text-3xl text-xl capitalize">Exclusive Sale Profits
+        </h3>
+        <div
+            class="flex justify-center lg:w-2/4 md:w-[75%]  m-auto mt-5 border-2 border-dashed rounded-lg border-[#eb6a07] p-5">
+            <div class="text-center text-white ">
+                <i class="fa-solid fa-lock text-3xl text-[#4252ce]"></i>
+                <span class="text-slate-200 sm:text-2xl text-xl font-semibold sm:ml-3 block sm:inline-block">Old
+                    User</span> <br class="hidden sm:block">
+                <h3 class="my-3 text-sm sm:text-lg text-white">Experience a solid 2.52% Sale Profit on your loyalty</h3>
+            </div>
+            <div class="text-center text-white ml-5">
+                <i class="fa-solid fa-user-plus  sm:text-3xl text-xl text-[#4252ce]"></i>
+                <span class="text-slate-200 text-2xl font-semibold sm:ml-3 block sm:inline-block">New Users</span> <br
+                    class="hidden sm:block">
+                <h3 class="my-3 text-sm sm:text-lg text-white">Experience a solid 2.52% Sale Profit on your loyalty</h3>
+            </div>
+        </div>
+        <h3 class="text-center text-slate-400 text-xl font-semibold mt-5">Seize the opportunity to elevate your earnings
+            journey!</h3>
+        <div class="text-center my-5">
+            <button class="px-11 py-2 bg-[#eb6a07]  font-semibold  text-white rounded-[20px]">Explore Now</button>
+        </div>
+    </div>
+
+
+    <section class="bg-white sm:p-5 pr-3  mb-3 sm:mx-5 mx-2 mt-5">
+        <div class="relative mb-3">
+            <h6 class="mb-0">
+                <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="animated-collapse-1">
+                    <span class="text-sm sm:text-[16px]">What is Material Tailwind?</span>
+                    <i
+                        class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"></i>
+                </button>
+            </h6>
+            <div data-collapse="animated-collapse-1" class="hidden">
+                <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    We're not always in the position that we want to be at. We're constantly
+                    growing. We're constantly making mistakes. We're constantly trying to
+                    express ourselves and actualize our dreams.
+                </div>
+            </div>
+        </div>
+        <div class="relative mb-3">
+            <h6 class="mb-0">
+                <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="animated-collapse-2">
+                    <span class="text-sm sm:text-[16px]">How to use Material Tailwind?</span>
+                    <i
+                        class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"></i>
+                </button>
+            </h6>
+            <div data-collapse="animated-collapse-2" class="hidden">
+                <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    We're not always in the position that we want to be at. We're constantly
+                    growing. We're constantly making mistakes. We're constantly trying to
+                    express ourselves and actualize our dreams.
+                </div>
+            </div>
+        </div>
+        <div class="relative mb-3">
+            <h6 class="mb-0">
+                <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="animated-collapse-3">
+                    <span class="text-sm sm:text-[16px]">What can I do with Material Tailwind?</span>
+                    <i
+                        class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"></i>
+                </button>
+            </h6>
+            <div data-collapse="animated-collapse-3" class="hidden">
+                <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    We're not always in the position that we want to be at. We're constantly
+                    growing. We're constantly making mistakes. We're constantly trying to
+                    express ourselves and actualize our dreams.
                 </div>
             </div>
         </div>
     </section>
 
-    <section
-        class="otpPopup z-50  w-full h-lvh hidden fixed top-0 left-0  items-center justify-center bg-[rgba(0,0,0,0.5)]">
-        <div class="bg-white  p-10 text-center rounded-md relative">
-            <i class="fa-solid fa-xmark closeOTPPopup absolute right-3 top-1 cursor-pointer text-lg"></i>
-            <h2 class="text-2xl font-semibold">OTP Verification </h2>
-            <h3 class="text-sm mt-3">We have sent you an OTP on &nbsp; <span>**** </span><strong class=""> 1045</strong>
-            </h3>
-            <form id="otp-verification-form" data-group-name="digits" enctype="multipart/form-data"
-            class="digit-group"  novalidate="novalidate">
-                <div class="form-group text-center inputWrapper my-8">
-                    <input type="tel" class="digit __mr_20 text-center border w-10 h-10 rounded-md mx-2" id="digit-1" name="digit-1" data-next="digit-2"
-                        onkeypress="return numOnly(event)" maxlength="1">
-                    <input type="tel" class="digit __mr_20 text-center border w-10 h-10 rounded-md mx-2" id="digit-2" name="digit-2" data-next="digit-3"
-                        data-previous="digit-1" onkeypress="return numOnly(event)" maxlength="1">
-                    <input type="tel" class="digit __mr_20 text-center border w-10 h-10 rounded-md mx-2" id="digit-3" name="digit-3" data-next="digit-4"
-                        data-previous="digit-2" onkeypress="return numOnly(event)" maxlength="1">
-                    <input type="tel" class="digit text-center border w-10 h-10 rounded-md mx-2" id="digit-4" name="digit-4" data-previous="digit-3"
-                        onkeypress="return numOnly(event)" maxlength="1">
-                    <input id="otp" type="hidden" name="otp" minlength="4" maxlength="4">
-                    <!-- <input type="hidden" name="otp_mobile_number" id="otp_mobile_number" value=""> -->
-                    <p class="help-block otp_error_box mt-3 text-center"></p>
-                </div>
-                <div class="btnFroup">
-                    <p class="mb-3 resend-btn text-center">
-                        <span id="otp_counter" class="hidden text-xs"></span>
-                        <span id="resend_otp" class="text-sm" role="button"><strong class="__theme_color">Resend OTP</strong></span>
-                    </p>
-                    <button type="submit" id="otp_submit_btn" class="bg-[#2f3c97] text-center text-white py-2 px-10 text-sm rounded-sm">Verify OTP </button>
-                </div>
-            </form>
-        </div>
-    </section>
+
 
     <footer class="bg-[#2f3c97] px-[5%] py-12">
         <div class="flex flex-wrap justify-between">
             <div class="lg:w-[30%] sm:w-[48%]  w-full">
                 <img src="./images/logo.png" class="w-2/4 m-auto sm:m-0" alt="logo">
-                <p class="text-white my-3 text-center sm:text-left">Dive into a realm of exclusive offers and unbeatable
+                <p class="text-white my-3 text-center sm:text-left">Dive into a realm of exclusive offers and
+                    unbeatable
                     discounts. Experience
-                    top-notch quality at affordable prices. Join our community for curated deals, making every purchase
-                    a delight. Elevate your shopping with KUPNZ, where savings meet satisfaction. Your go-to destination
+                    top-notch quality at affordable prices. Join our community for curated deals, making every
+                    purchase
+                    a delight. Elevate your shopping with KUPNZ, where savings meet satisfaction. Your go-to
+                    destination
                     for unparalleled value. </p>
             </div>
             <div class="lg:w-[20%] w-[48%] mt-10 lg:mt-0">
@@ -439,7 +488,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
     <script src="./js/header-footer.js"></script>
-    <script src="./js/register.js"></script>
+    <script src="./js/contact-us.js"></script>
 </body>
 
 </html>

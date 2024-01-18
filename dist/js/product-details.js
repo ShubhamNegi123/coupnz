@@ -11,6 +11,10 @@ $(document).ready(function () {
     $(document).on('click', '.closeRDPopup', function () {
         $('.redirectionPopup').slideUp();
     })
+    $(document).on('click', '.redirectBtn', function () {
+        $('.redirectionPopup .box').hide(200);
+        $('.loadingPopup').show(200);
+    })
     
 
 });  // jquery function end
