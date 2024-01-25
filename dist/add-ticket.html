@@ -18,12 +18,13 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
     </style>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header-footer.css">
-    <link rel="stylesheet" href="./css/contact-us.css">
+    <link rel="stylesheet" href="./css/add-ticket.css">
 </head>
 
 <body class="bg-[#eee]">
@@ -263,66 +264,126 @@
 
 
     <section class="homeSec  mb-3 sm:mx-5 mx-2 mt-[100px]">
-        <div class="bg-white text-center px-5 py-8">
-            <h2 class="text-3xl font-semibold text-[#2f3c97]">Get In Touch</h2>
-            <p class="text-sm lg:w-2/4 m-auto text-slate-800 mt-3">Immerse in exclusive offers and unbeatable discounts
-                with KUPNZ – your go-to for cashback coupons. Elevate your shopping; where savings meet satisfaction.
-            </p>
-        </div>
-    </section>
-    <section class="bg-white lg:w-[80%] lg:mx-auto  mb-3 sm:mx-5 mx-2 mt-5">
-        <div class="flex flex-col md:flex-row">
-            <div class="lg:w-[30%] md:w-[35%] w-full px-5 relative  sm:flex md:block">
-                <div class="border-r-2 hidden md:block absolute top-2/4 right-0 w-[1px] h-[80%] -translate-y-2/4"></div>
-                <div class=" mt-5   w-full sm:w-[30%] md:w-full md:p-5 p-2 text-center">
-                    <i class="fa-regular fa-envelope text-[#2f3c97] text-3xl"></i>
-                    <h2 class="mt-2 font-semibold">Email</h2>
-                    <a class="block text-slate-600 text-sm" href="mailto:coupnz@gmail.com">coupnz@gmail.com</a>
-                    <a class="block text-slate-600 text-sm" href="mailto:help@coupnz.com">help@coupnz.com</a>
-                </div>
-                <div class="  mt-5 md:mt-0 w-full sm:w-[30%] md:w-full md:p-5 p-2 text-center">
-                    <i class="fa-solid fa-phone text-[#2f3c97] text-3xl"></i>
-                    <h2 class="mt-2 font-semibold">Phone </h2>
-                    <a class="block text-slate-600 text-sm" href="tel:+919898562548">9898562548</a>
-                    <a class="block text-slate-600 text-sm" href="tel:+918956452154">8956452154</a>
-                </div>
-                <div class=" mt-5 md:mt-0 w-full sm:w-[40%] md:w-full mb-5 md:p-5 p-2 text-center">
-                    <i class="fa-solid fa-location-dot text-[#2f3c97] text-3xl"></i>
-                    <h2 class="mt-2 font-semibold">Address</h2>
-                    <a class="block text-slate-600 text-sm"
-                        href="https://www.google.com/maps/place/India+Gate/@28.6129166,77.2248963,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce2daa9eb4d0b:0x717971125923e5d!8m2!3d28.612912!4d77.2295097!16zL20vMDM1bWMz?entry=ttu">Office
-                        No. 5124, 91 Floor, Tower-Z, XYZ TOWER, Sector 62, Noida, Uttar
-                        Pradesh 201301</a>
-                </div>
+        <h2 class="p-3 mb-2 bg-white text-center text-xl font-semibold text-[#eb6a07] uppercase border-b rounded-sm ">
+            Raise Ticket / Add Missing Profit Ticket </h2>
+        <div class="md:flex  bg-white">
+            <div class="lg:w-[20%] md:w-[25%] border-r p-5 bg-[#eee] md:bg-white">
+                <ul class="flex md:block max-w-full overflow-x-scroll md:overflow-hidden">
+                    <li class="flex-shrink-0 mx-2 text-sm "><a class="block py-2 md:border-b " href="">My
+                            Earnings</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b"
+                            href="">Withdraw</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b"
+                            href="">Payments History</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a
+                            class="block py-2 md:border-b border-[#2f3c97] text-[#eb6a07] font-semibold" href="">Raise
+                            Ticket</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b"
+                            href="">Refer & Earn</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b"
+                            href="">Referral Network</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">My
+                            Activity</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">My
+                            Bot</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b"
+                            href="">Settings</a></li>
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:b" href="">Logout</a>
+                    </li>
+                </ul>
             </div>
-            <div class="lg:w-[50%] md:w-[52%] w-[90%] lg:ml-10 ml-5 mb-10 md:mb-0">
-                <h2 class="mt-10 text-[#2f3c97] text-2xl font-semibold text-center md:text-start">Send Us a Message</h2>
-                <p class="text-sm text-slate-600 text-center md:text-start">Have questions or feedback? We'd love to
-                    hear from you! Drop us a
-                    message, and we'll get back to
-                    you promptly.</p>
-                <form class="mt-10" id="contactUsForm">
-                    <div class="form-group">
-                        <input type="text" id="fullName" name="fullName" placeholder="Full Name"
-                            class="form-control h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+            <div class="lg:w-[80%] md:w-[75%] py-7 md:px-10 px-5">
+                <h2 class="capitalize font-semibold  text-[#2f3c97] text-2xl ">Raise Ticket</h2>
+                <p class="text-sm text-slate-600">If you did a transaction via DealsnCoupons & did not get the
+                    qualifying Sale Profit/Referral
+                    amount/Gift Card Cashback, don't worry! Just raise a ticket, Sale Profit/Referral/Gift Card Cashback
+                    ticket & our team will escalate your transaction to the retailer. Please note that retailers only
+                    accept Missing Sale Profit/Referral claims for the last 10 days.</p>
+                <div class="mt-5">
+                    <button
+                        class=" text-white rounded-[20px]  bg-[#2f3c97] sm:px-10 px-5 py-1 capitalize mr-2 addTicketBtn">Add
+                        Ticket</button>
+                    <button
+                        class=" text-white rounded-[20px]  bg-[#eb6a07] sm:px-10 px-5 py-1 capitalize moreInfoBtn">more
+                        Info <i class="fa-solid fa-circle-info"></i></button>
+                </div>
+                <div class="flex flex-wrap mt-8 pt-8 md:justify-between justify-center border-t-2">
+                    <div class="details hidden">
+                        <h2 class="capitalize font-semibold  text-slate-800 text-xl mb-4">More Details</h2>
+                        <ul class="list-disc pl-5">
+                            <li class="my-2 text-sm leading-6">Retailers do not accept Missing Tickets older than 7 days
+                            </li>
+                            <li class="my-2 text-sm leading-6">As these Missing Transactions are dealt with outside the
+                                usual payment process, Tickets may take 30-45 days to get resolved and show in your
+                                Earnings Account. Consequently confirmation period of Missing Transactions can also take
+                                longer than 90 days. Rest assured we will try our best to get your transaction approved
+                                as soon as possible. That’s when we earn too, so our incentives are always aligned with
+                                yours!</li>
+                            <li class="my-2 text-sm leading-6">Incorrect Information may lead to Cancellation of Sale
+                                Profit/Referral. Please do not raise multiple tickets for the same transaction. This may
+                                also lead to the Retailer declining the query</li>
+                            <li class="my-2 text-sm leading-6">Please note that sometimes transactions initially track
+                                at lower/incorrect amounts and get updated to the right amount at the time of
+                                confirmation</li>
+                            <li class="my-2 text-sm leading-6">While we shall try our best to resolve and get your
+                                Missing Sale Profit approved, the retailer’s decision is final in this regard</li>
+                        </ul>
                     </div>
-                    <div class="form-group">
-                        <input type="email" minlength="4" id="email" name="email" placeholder="Email Address"
-                            class="form-control h-9 border-l-8 mt-4 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" minlength="10" maxlength="10" id="mobile" name="mobile"
-                            placeholder="Mobile Number" onkeypress="return numOnly(event)"
-                            class="form-control h-9 border-l-8 mt-4 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
-                    </div>
-                    <div class="form-group">
-                        <textarea name="msg" id="msg" placeholder="Enter Your Message"
-                            class="w-full h-24 form-control pt-2 border-l-8 mt-4 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none resize-none"></textarea>
-                    </div>
+                    <div class="addTicketForm">
+                        <h2 class="capitalize font-semibold  text-slate-800 text-xl mb-4">Add Missing Profit Ticket</h2>
+                        <form class="pt-5  flex justify-between flex-wrap" id="addTicket">
+                            <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                                <label for="retailer" class=" text-sm text-slate-600">Select Item Type</label>
+                                <select name="retailer" id="retailer"
+                                    class="form-control h-9 border-l-8  border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full ">
+                                    <option value="">Please Select Item Type</option>
+                                    <option value="Store">Store</option>
+                                    <option value="Voucher">Voucher</option>
+                                </select>
+                            </div>
+                            <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                                <label for="transactionDate" class=" text-sm text-slate-600"> Transaction Date</label>
+                                <input type="text" id="transactionDate" name="transactionDate" readonly
+                                    placeholder="Transaction Date"
+                                    class="form-control h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                            </div>
+                            <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                                <label for="shopName" class=" text-sm text-slate-600">Select Shop Name</label>
+                                <select name="shopName" id="shopName"
+                                    class="form-control h-9 border-l-8  border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full ">
+                                    <option value="">Please Shop Name</option>
+                                    <option value="shop1">shop1</option>
+                                    <option value="shop2">shop2</option>
+                                </select>
+                            </div>
+                            <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                                <label for="bookingId" class=" text-sm text-slate-600"> Order/Booking ID</label>
+                                <input type="text" id="bookingId" name="bookingId"
+                                    class="form-control h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                            </div>
+                            <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                                <label for="orderAmount" class=" text-sm text-slate-600"> Order Amount</label>
+                                <input type="text" id="orderAmount" name="orderAmount"
+                                    onkeypress="return numOnly(event)"
+                                    class="form-control h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                            </div>
 
-                    <button type="submit"
-                        class="w-full bg-[#2f3c97] h-10 text-white rounded-sm mt-2 font-semibold">SUBMIT</button>
-                </form>
+                            <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                                <label for="attchment" class=" text-sm text-slate-600">Upload Attchment</label>
+                                <input type="file" id="attchment" name="attchment"
+                                    class="form-control h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 pt-1 cursor-pointer outline-none w-full">
+                            </div>
+                            <div class="form-group w-full lg:w-full mb-4">
+                                <label for="PurchasedItem" class=" text-sm text-slate-600"> Purchased Item</label>
+                                <textarea id="PurchasedItem" name="PurchasedItem"
+                                    class="form-control p-2  border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full h-24 resize-none"
+                                    required cols="30" rows="10"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="md:w-[48%] sm:w-[45%] m-auto w-full lg:w-[45%] bg-[#2f3c97] h-10 text-white rounded-sm my-4 font-semibold uppercase">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -356,64 +417,7 @@
         </div>
     </div>
 
-    
 
-    <section class="bg-white sm:p-5 pr-3  mb-3 sm:mx-5 mx-2 mt-5">
-        <div class="relative mb-3">
-            <h6 class="mb-0">
-                <button
-                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
-                    data-collapse-target="animated-collapse-1">
-                    <span class="text-sm sm:text-[16px]">What is Material Tailwind?</span>
-                    <i
-                        class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"></i>
-                </button>
-            </h6>
-            <div data-collapse="animated-collapse-1" class="hidden">
-                <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
-                    We're not always in the position that we want to be at. We're constantly
-                    growing. We're constantly making mistakes. We're constantly trying to
-                    express ourselves and actualize our dreams.
-                </div>
-            </div>
-        </div>
-        <div class="relative mb-3">
-            <h6 class="mb-0">
-                <button
-                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
-                    data-collapse-target="animated-collapse-2">
-                    <span class="text-sm sm:text-[16px]">How to use Material Tailwind?</span>
-                    <i
-                        class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"></i>
-                </button>
-            </h6>
-            <div data-collapse="animated-collapse-2" class="hidden">
-                <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
-                    We're not always in the position that we want to be at. We're constantly
-                    growing. We're constantly making mistakes. We're constantly trying to
-                    express ourselves and actualize our dreams.
-                </div>
-            </div>
-        </div>
-        <div class="relative mb-3">
-            <h6 class="mb-0">
-                <button
-                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
-                    data-collapse-target="animated-collapse-3">
-                    <span class="text-sm sm:text-[16px]">What can I do with Material Tailwind?</span>
-                    <i
-                        class="absolute right-0 pt-1 text-base transition-transform fa fa-chevron-down group-open:rotate-180"></i>
-                </button>
-            </h6>
-            <div data-collapse="animated-collapse-3" class="hidden">
-                <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
-                    We're not always in the position that we want to be at. We're constantly
-                    growing. We're constantly making mistakes. We're constantly trying to
-                    express ourselves and actualize our dreams.
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
@@ -489,7 +493,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
     <script src="./js/header-footer.js"></script>
-    <script src="./js/contact-us.js"></script>
+    <script src="./js/add-ticket.js"></script>
 </body>
 
 </html>
