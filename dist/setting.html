@@ -18,13 +18,14 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
     </style>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header-footer.css">
-    <link rel="stylesheet" href="./css/payment-history.css">
+    <link rel="stylesheet" href="./css/setting.css">
 </head>
 
 <body class="bg-[#eee]">
@@ -265,16 +266,15 @@
 
     <section class="homeSec  mb-3 sm:mx-5 mx-2 mt-[100px]">
         <h2 class="p-3 mb-2 bg-white text-center text-xl font-semibold text-[#eb6a07] uppercase border-b rounded-sm ">
-            Payments History </h2>
+            Settings </h2>
         <div class="md:flex  bg-white">
             <div class="lg:w-[20%] md:w-[25%] border-r p-5 bg-[#eee] md:bg-white">
                 <ul class="flex md:block max-w-full overflow-x-scroll md:overflow-hidden">
-                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px]"> <a class="block py-2 md:border-b" href="">My
+                    <li class="flex-shrink-0 mx-2 text-sm "><a class="block py-2 md:border-b" href="">My
                             Earnings</a></li>
-                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b "
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b"
                             href="">Withdraw</a></li>
-                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a
-                            class="block py-2 md:border-b border-[#2f3c97] text-[#eb6a07] font-semibold"
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b"
                             href="">Payments History</a></li>
                     <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b"
                             href="">Raise Ticket</a></li>
@@ -284,128 +284,115 @@
                             href="">Referral Network</a></li>
                     <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">My
                             Activity</a></li>
-                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b" href="">My
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b " href="">My
                             Bot</a></li>
-                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:border-b"
+                    <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a
+                            class="block py-2 md:border-b  border-[#2f3c97] text-[#eb6a07] font-semibold"
                             href="">Settings</a></li>
                     <li class="flex-shrink-0 mx-2 text-sm md:text-[16px] "><a class="block py-2 md:b" href="">Logout</a>
                     </li>
                 </ul>
             </div>
-            <div class="lg:w-[80%] md:w-[75%] py-7 md:px-10 px-5">
-                <h2 class="capitalize font-semibold  text-[#2f3c97] text-2xl border-b-2 pb-1">Recent Payments History
-                </h2>
-                <div class="mt-8 w-full overflow-x-scroll lg:overflow-hidden">
-                    <table id="myDataTable" class="display w-full min-w-[600px]">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Transaction Id</th>
-                                <th>Amount</th>
-                                <th>Payment Mode</th>
-                                <th>Payment Status</th>
-                                <th>Payment Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>20-Jan-2023</td>
-                                <td>NA</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 1579.34</td>
-                                <td></td>
-                                <td>Unpaid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                            <tr>
-                                <td>19-Jul-2023</td>
-                                <td>DVGF56625</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 10.00</td>
-                                <td>Wallet</td>
-                                <td>Paid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                            <tr>
-                                <td>25-Mar-2012</td>
-                                <td>LJG7877J</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 65100.5</td>
-                                <td>Wallet</td>
-                                <td>Paid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                            <tr>
-                                <td>20-Jan-2023</td>
-                                <td>NA</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 1579.34</td>
-                                <td></td>
-                                <td>Unpaid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                            <tr>
-                                <td>19-Jul-2023</td>
-                                <td>DVGF56625</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 10.00</td>
-                                <td>Wallet</td>
-                                <td>Paid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                            <tr>
-                                <td>25-Mar-2012</td>
-                                <td>LJG7877J</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 65100.5</td>
-                                <td>Wallet</td>
-                                <td>Paid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                            <tr>
-                                <td>20-Jan-2023</td>
-                                <td>NA</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 1579.34</td>
-                                <td></td>
-                                <td>Unpaid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                            <tr>
-                                <td>19-Jul-2023</td>
-                                <td>DVGF56625</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 10.00</td>
-                                <td>Wallet</td>
-                                <td>Paid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                            <tr>
-                                <td>25-Mar-2012</td>
-                                <td>LJG7877J</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 65100.5</td>
-                                <td>Wallet</td>
-                                <td>Paid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                            <tr>
-                                <td>20-Jan-2023</td>
-                                <td>NA</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 1579.34</td>
-                                <td></td>
-                                <td>Unpaid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                            <tr>
-                                <td>19-Jul-2023</td>
-                                <td>DVGF56625</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 10.00</td>
-                                <td>Wallet</td>
-                                <td>Paid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                            <tr>
-                                <td>25-Mar-2012</td>
-                                <td>LJG7877J</td>
-                                <td><i class="fa-solid fa-indian-rupee-sign text-sm"></i> 65100.5</td>
-                                <td>Wallet</td>
-                                <td>Paid</td>
-                                <td><a href="" class="py-1 px-3 border text-black rounded-[20px] text-xs">View Details <i class="fa-solid fa-circle-info text-black"></i></a> </td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="lg:w-[70%] md:w-[75%] py-3 md:px-10 px-5">
+                <ul class="sm:flex flex-wrap capitalize font-semibold  text-[#eb6a07] text-lg text-center settingTabs">
+                    <li class="cursor-pointer inline-block py-2 border-b-2  border-[#2f3c97] text-[#2f3c97] personalDetails">Personal Details
+                    </li>
+                    <li class="cursor-pointer lg:ml-8 sm:ml-4 py-2  inline-block  mx-3 paymentSetting">Payment Settings</li>
+                    <li class="cursor-pointer lg:ml-8 sm:ml-4 py-2  inline-block mx-3 changePassword">Change Password</li>
+                </ul>
+                <div class="flex flex-wrap mt-5  md:justify-between justify-center border-t-2">
+                    <form class="mt-5 w-full flex justify-between flex-wrap settingFrom " id="personalDetailsForm">
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                            <label for="fullName" class=" text-sm text-slate-600"> Full Name</label>
+                            <input type="text" id="fullName" name="fullName" value="Jack Sparrow"
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4 relative">
+                            <label for="mobile" class=" text-sm text-slate-600"> Mobile Number</label>
+                            <input type="text" id="mobile" name="mobile" value="9898989898" minlength="10" maxlength="10"
+                                onkeypress="return numOnly(event)"
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                            <i class="bi bi-patch-check-fill absolute right-2 top-8 text-[#2f3c97]"></i>
+                        </div>
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4 relative">
+                            <label for="email" class=" text-sm text-slate-600">Email Address</label>
+                            <input type="email" id="email" name="email" value="jackSparrow@gmail.com"
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+
+
+                        <button type="submit"
+                            class="w-full bg-[#2f3c97] h-10 text-white rounded-sm mt-2 font-semibold uppercase">Update</button>
+                    </form>
+                    <form class="mt-5 w-full hidden justify-between flex-wrap settingFrom" id="paymentSettingForm">
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                            <label for="AcHName" class=" text-sm text-slate-600"> Account Holder Name</label>
+                            <input type="text" id="AcHName" name="AcHName" value="Jack Sparrow"
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4 relative">
+                            <label for="AcNo" class=" text-sm text-slate-600"> Account Number</label>
+                            <input type="text" id="AcNo" name="AcNo" value="33568545785" minlength="9" maxlength="25"
+                                onkeypress="return numOnly(event)"
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                            <label for="upiId" class=" text-sm text-slate-600"> UPI Id</label>
+                            <input type="text" id="upiId" name="upiId" value="JackSparrow@oky"
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                            <label for="bankName" class=" text-sm text-slate-600"> Bank Name</label>
+                            <input type="text" id="bankName" name="bankName" value="SBI"
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                            <label for="branch" class=" text-sm text-slate-600"> Bank Branch Name</label>
+                            <input type="text" id="branch" name="branch" value="janakpuri West"
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                            <label for="ifsc" class=" text-sm text-slate-600"> IFSC Code</label>
+                            <input type="text" id="ifsc" name="ifsc" value="SBIA987876456"
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                            <label for="pan" class=" text-sm text-slate-600"> PAN Card</label>
+                            <input type="text" id="pan" name="pan" value="CORAP8765T"
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] uppercase bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4">
+                            <label for="panImg" class=" text-sm text-slate-600"> PAN Card Image</label>
+                            <input type="file" id="panImg" name="panImg" 
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] pt-1 bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4 relative">
+                            <label for="password" class=" text-sm text-slate-600"> Your Password </label>
+                            <input type="password" id="password" name="password" value="jackSparrow@gmail.com"
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+
+
+                        <button type="submit"
+                            class="w-full bg-[#2f3c97] h-10 text-white rounded-sm mt-2 font-semibold uppercase">Update</button>
+                    </form>
+                    <form class="mt-5 w-full hidden justify-between flex-wrap settingFrom" id="changePasswordForm">
+                        
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4 relative">
+                            <label for="oldPassword" class=" text-sm text-slate-600">Enter Old Password </label>
+                            <i class="fa-regular fa-eye showPassword absolute right-2 top-8 text-[#eb6a07] cursor-pointer"></i>
+                            <input type="password" id="oldPassword" name="oldPassword" 
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+                        <div class="form-group md:w-[48%] sm:w-[45%] w-full lg:w-[45%] mb-4 relative">
+                            <label for="newPassword" class=" text-sm text-slate-600">Enter New Password </label>
+                            <i class="fa-regular fa-eye showPassword absolute right-2 top-8 text-[#eb6a07]  cursor-pointer"></i>
+                            <input type="password" id="newPassword" name="newPassword" 
+                                class="form-control text-sm h-9 border-l-8 border-l-[#2f3c97] bg-slate-100 pl-3 outline-none w-full">
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-[#2f3c97] h-10 text-white rounded-sm mt-2 font-semibold uppercase">Update</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -515,9 +502,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
     <script src="./js/header-footer.js"></script>
-    <script src="./js/payment-history.js"></script>
+    <script src="./js/setting.js"></script>
 </body>
 
 </html>
