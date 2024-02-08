@@ -45,7 +45,7 @@ $(document).ready(function () {
                     </div>
                     <div class="flex items-center h-5 sidebarCartAction">
                         <button class="bg-[#2f3c97] w-5 h-full border-transparent flex items-center justify-center text-xs cursor-pointer text-white reduceQuantity"><i class="fa-solid fa-minus"></i></button>
-                        <input type="text" min="1" value="1" onkeypress="return numOnly(event)" class="cartQuantityInput w-6 h-full outline-none shadow-none border text-xs  text-center">
+                        <input type="text" min="1" value="1" onkeypress="return numOnly(event)" class="cartQuantityInput w-6 h-full outline-none shadow-none border text-xs  text-center"  onCopy="return false" onDrop="return false" onPaste="return false">
                         <button class="bg-[#2f3c97] w-5 h-full border-transparent flex items-center justify-center text-xs cursor-pointer text-white AddQuantity "><i class="fa-solid fa-plus"></i></button>
                     </div>
                     <i class="fa-solid fa-trash-can cursor-pointer deleteCartItem"></i>
@@ -85,12 +85,15 @@ $(document).ready(function () {
 
     $(document).on('keyup', '.cartSideBar .cartQuantityInput', function () {
         let val = $(this).val();
-        if (+val > 20) {
+        if (!/^\d+$/.test(val)) { // Check if the input is not a number
+            val = 1;
+        } else if (+val > 20) {
             val = 20;
-            $(this).val(val);
         }
+        $(this).val(val);
         calculatePrice();
     })
+    
 
 
     function calculatePrice() {
