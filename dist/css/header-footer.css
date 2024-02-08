@@ -52,3 +52,6 @@ nav {
     color: black;
     /* Optionally, you can set the text color */
 }
+::-webkit-scrollbar {
+    width: 5px;
+}

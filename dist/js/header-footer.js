@@ -2,17 +2,17 @@ $(document).ready(function () {
 
 
     $(".slideRight").click(function () {
-        var containerWidth = $(".mainSlidingScrollbar").width();
-        var scrollPercentage = ($(window).width() < 640) ? 0.5 : 0.2;
-        var newScrollLeft = $(".mainSlidingScrollbar").scrollLeft() + containerWidth * scrollPercentage;
+        let containerWidth = $(".mainSlidingScrollbar").width();
+        let scrollPercentage = ($(window).width() < 640) ? 0.5 : 0.2;
+        let newScrollLeft = $(".mainSlidingScrollbar").scrollLeft() + containerWidth * scrollPercentage;
 
         $(".mainSlidingScrollbar").animate({ scrollLeft: newScrollLeft }, 500);
     });
 
     $(".slideLeft").click(function () {
-        var containerWidth = $(".mainSlidingScrollbar").width();
-        var scrollPercentage = ($(window).width() < 640) ? 0.5 : 0.2;
-        var newScrollLeft = $(".mainSlidingScrollbar").scrollLeft() - containerWidth * scrollPercentage;
+        let containerWidth = $(".mainSlidingScrollbar").width();
+        let scrollPercentage = ($(window).width() < 640) ? 0.5 : 0.2;
+        let newScrollLeft = $(".mainSlidingScrollbar").scrollLeft() - containerWidth * scrollPercentage;
 
         $(".mainSlidingScrollbar").animate({ scrollLeft: newScrollLeft }, 500);
     });
@@ -72,5 +72,10 @@ $(document).ready(function () {
     }
 
 
-
+    
 });  // jquery function end
+function numOnly(evt) {
+    var k;
+    document.all ? (k = evt.keyCode) : (k = evt.which);
+    return k == 0 || k == 9 || k == 8 || k == 32 || (k >= 48 && k <= 57);
+}

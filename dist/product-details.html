@@ -23,6 +23,7 @@
     </style>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header-footer.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body class="bg-[#eee]">
@@ -373,15 +374,15 @@
     <section class="vouchers bg-white p-3 mx-5 rounded-sm">
         <div class="flex flex-wrap ">
             <div
-                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3">
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
                 <div class="relative h-64">
-                    <img class="w-full h-full  z-20" src="./images/jacket1.jpg" alt="product image">
+                    <img class="w-full h-full  z-20 productImg" src="./images/jacket1.jpg" alt="product image">
                     <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
                     <i
-                        class="fa-solid fa-cart-plus absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
                     <h4
-                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07]">
-                        Price ₹ 934</h4>
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">934</span> </h4>
                 </div>
                 <div class="p-3">
                     <div class="flex justify-between">
@@ -392,7 +393,9 @@
                             <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.35</span>
                         </div>
                     </div>
-                    <h3 class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4">Men Rust
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        Men Rust
                         Brown Pure jacket with woolen </h3>
                     <div class="flex justify-between items-center">
                         <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
@@ -404,15 +407,80 @@
 
             </div>
             <div
-                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3">
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
                 <div class="relative h-64">
-                    <img class="w-full h-full  z-20" src="./images/jacket2.jpg" alt="product image">
+                    <img class="w-full h-full  z-20 productImg" src="./images/jacket2.jpg" alt="product image">
                     <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
                     <i
-                        class="fa-solid fa-cart-plus absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
                     <h4
-                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07]">
-                        Price ₹ 934</h4>
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">3434</span> </h4>
+                </div>
+                <div class="p-3">
+                    <div class="flex justify-between">
+                        <div class="text-sm text-slate-600"> Sale Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 67.07</span>
+                        </div>
+                        <div class="text-sm text-slate-600">Referral Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.65</span>
+                        </div>
+                    </div>
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perspiciatis corporis quod
+                        aliquam. </h3>
+                    <div class="flex justify-between items-center">
+                        <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
+                        <a href=""
+                            class="px-4 py-1 bg-[#2f3c97] text-xs text-white  hover:border-slate-300 border border-white rounded-sm">Get
+                            Deal</a>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
+                <div class="relative h-64">
+                    <img class="w-full h-full  z-20 productImg" src="./images/jeans1.jpg" alt="product image">
+                    <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
+                    <i
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                    <h4
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">34</span> </h4>
+                </div>
+                <div class="p-3">
+                    <div class="flex justify-between">
+                        <div class="text-sm text-slate-600"> Sale Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 97.07</span>
+                        </div>
+                        <div class="text-sm text-slate-600">Referral Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 0.35</span>
+                        </div>
+                    </div>
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        Pariatur saepe repudiandae omnis nam ullam, </h3>
+                    <div class="flex justify-between items-center">
+                        <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
+                        <a href=""
+                            class="px-4 py-1 bg-[#2f3c97] text-xs text-white  hover:border-slate-300 border border-white rounded-sm">Get
+                            Deal</a>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
+                <div class="relative h-64">
+                    <img class="w-full h-full  z-20 productImg" src="./images/jeans2.jpg" alt="product image">
+                    <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
+                    <i
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                    <h4
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">34</span> </h4>
                 </div>
                 <div class="p-3">
                     <div class="flex justify-between">
@@ -423,7 +491,73 @@
                             <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.35</span>
                         </div>
                     </div>
-                    <h3 class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4">Men Rust
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        suscipit blanditiis odit mollitia sint </h3>
+                    <div class="flex justify-between items-center">
+                        <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
+                        <a href=""
+                            class="px-4 py-1 bg-[#2f3c97] text-xs text-white  hover:border-slate-300 border border-white rounded-sm">Get
+                            Deal</a>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
+                <div class="relative h-64">
+                    <img class="w-full h-full  z-20 productImg" src="./images/jeasn3.jpg" alt="product image">
+                    <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
+                    <i
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                    <h4
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">8564</span> </h4>
+                </div>
+                <div class="p-3">
+                    <div class="flex justify-between">
+                        <div class="text-sm text-slate-600"> Sale Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 47.07</span>
+                        </div>
+                        <div class="text-sm text-slate-600">Referral Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.35</span>
+                        </div>
+                    </div>
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        minima beatae officia nulla hic non! </h3>
+                    <div class="flex justify-between items-center">
+                        <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
+                        <a href=""
+                            class="px-4 py-1 bg-[#2f3c97] text-xs text-white  hover:border-slate-300 border border-white rounded-sm">Get
+                            Deal</a>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
+                <div class="relative h-64">
+                    <img class="w-full h-full  z-20 productImg" src="./images/p1.jpeg" alt="product image">
+                    <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
+                    <i
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                    <h4
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">934</span> </h4>
+                </div>
+                <div class="p-3">
+                    <div class="flex justify-between">
+                        <div class="text-sm text-slate-600"> Sale Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 47.07</span>
+                        </div>
+                        <div class="text-sm text-slate-600">Referral Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.35</span>
+                        </div>
+                    </div>
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        Men Rust
                         Brown Pure jacket with woolen </h3>
                     <div class="flex justify-between items-center">
                         <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
@@ -435,15 +569,15 @@
 
             </div>
             <div
-                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3">
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
                 <div class="relative h-64">
-                    <img class="w-full h-full  z-20" src="./images/top1.jpg" alt="product image">
+                    <img class="w-full h-full  z-20 productImg" src="./images/jacket1.jpg" alt="product image">
                     <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
                     <i
-                        class="fa-solid fa-cart-plus absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
                     <h4
-                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07]">
-                        Price ₹ 934</h4>
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">934</span> </h4>
                 </div>
                 <div class="p-3">
                     <div class="flex justify-between">
@@ -454,8 +588,10 @@
                             <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.35</span>
                         </div>
                     </div>
-                    <h3 class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4">Men Rust
-                        Brown Pure jacket with woolen </h3>
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        Men Rust
+                        Brown Pure 2 jacket with woolen </h3>
                     <div class="flex justify-between items-center">
                         <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
                         <a href=""
@@ -466,15 +602,80 @@
 
             </div>
             <div
-                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3">
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
                 <div class="relative h-64">
-                    <img class="w-full h-full  z-20" src="./images/top2.jpg" alt="product image">
+                    <img class="w-full h-full  z-20 productImg" src="./images/jacket2.jpg" alt="product image">
                     <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
                     <i
-                        class="fa-solid fa-cart-plus absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
                     <h4
-                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07]">
-                        Price ₹ 934</h4>
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">3434</span> </h4>
+                </div>
+                <div class="p-3">
+                    <div class="flex justify-between">
+                        <div class="text-sm text-slate-600"> Sale Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 67.07</span>
+                        </div>
+                        <div class="text-sm text-slate-600">Referral Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.65</span>
+                        </div>
+                    </div>
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        Lorem ipsum dolor sit adipisicing elit. Nulla perspiciatis corporis quod
+                        aliquam. </h3>
+                    <div class="flex justify-between items-center">
+                        <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
+                        <a href=""
+                            class="px-4 py-1 bg-[#2f3c97] text-xs text-white  hover:border-slate-300 border border-white rounded-sm">Get
+                            Deal</a>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
+                <div class="relative h-64">
+                    <img class="w-full h-full  z-20 productImg" src="./images/jeans1.jpg" alt="product image">
+                    <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
+                    <i
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                    <h4
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">34</span> </h4>
+                </div>
+                <div class="p-3">
+                    <div class="flex justify-between">
+                        <div class="text-sm text-slate-600"> Sale Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 97.07</span>
+                        </div>
+                        <div class="text-sm text-slate-600">Referral Profit <br>
+                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 0.35</span>
+                        </div>
+                    </div>
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        repudiandae omnis nam ullam, </h3>
+                    <div class="flex justify-between items-center">
+                        <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
+                        <a href=""
+                            class="px-4 py-1 bg-[#2f3c97] text-xs text-white  hover:border-slate-300 border border-white rounded-sm">Get
+                            Deal</a>
+                    </div>
+                </div>
+
+            </div>
+            <div
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
+                <div class="relative h-64">
+                    <img class="w-full h-full  z-20 productImg" src="./images/jeans2.jpg" alt="product image">
+                    <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
+                    <i
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                    <h4
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">34</span> </h4>
                 </div>
                 <div class="p-3">
                     <div class="flex justify-between">
@@ -485,8 +686,9 @@
                             <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.35</span>
                         </div>
                     </div>
-                    <h3 class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4">Men Rust
-                        Brown Pure jacket with woolen </h3>
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        gf dfgdfg odit mollitia sint </h3>
                     <div class="flex justify-between items-center">
                         <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
                         <a href=""
@@ -497,15 +699,15 @@
 
             </div>
             <div
-                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3">
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
                 <div class="relative h-64">
-                    <img class="w-full h-full  z-20" src="./images/jeans1.jpg" alt="product image">
+                    <img class="w-full h-full  z-20 productImg" src="./images/jeasn3.jpg" alt="product image">
                     <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
                     <i
-                        class="fa-solid fa-cart-plus absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
                     <h4
-                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07]">
-                        Price ₹ 934</h4>
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">8564</span> </h4>
                 </div>
                 <div class="p-3">
                     <div class="flex justify-between">
@@ -516,8 +718,9 @@
                             <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.35</span>
                         </div>
                     </div>
-                    <h3 class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4">Men Rust
-                        Brown Pure jacket with woolen </h3>
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        dsf df d nulla hic non! </h3>
                     <div class="flex justify-between items-center">
                         <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
                         <a href=""
@@ -528,15 +731,15 @@
 
             </div>
             <div
-                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3">
+                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3 myProductCard">
                 <div class="relative h-64">
-                    <img class="w-full h-full  z-20" src="./images/jeans2.jpg" alt="product image">
+                    <img class="w-full h-full  z-20 productImg" src="./images/p1.jpeg" alt="product image">
                     <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
                     <i
-                        class="fa-solid fa-cart-plus absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
+                        class="fa-solid fa-cart-plus addToCartBtn absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
                     <h4
-                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07]">
-                        Price ₹ 934</h4>
+                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07] ">
+                        Price ₹ <span class="myProductPrice">934</span> </h4>
                 </div>
                 <div class="p-3">
                     <div class="flex justify-between">
@@ -547,7 +750,9 @@
                             <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.35</span>
                         </div>
                     </div>
-                    <h3 class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4">Men Rust
+                    <h3
+                        class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4 myProductName">
+                        Men Rust
                         Brown Pure jacket with woolen </h3>
                     <div class="flex justify-between items-center">
                         <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
@@ -558,130 +763,8 @@
                 </div>
 
             </div>
-            <div
-                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3">
-                <div class="relative h-64">
-                    <img class="w-full h-full  z-20" src="./images/jeasn3.jpg" alt="product image">
-                    <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
-                    <i
-                        class="fa-solid fa-cart-plus absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
-                    <h4
-                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07]">
-                        Price ₹ 934</h4>
-                </div>
-                <div class="p-3">
-                    <div class="flex justify-between">
-                        <div class="text-sm text-slate-600"> Sale Profit <br>
-                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 47.07</span>
-                        </div>
-                        <div class="text-sm text-slate-600">Referral Profit <br>
-                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.35</span>
-                        </div>
-                    </div>
-                    <h3 class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4">Men Rust
-                        Brown Pure jacket with woolen </h3>
-                    <div class="flex justify-between items-center">
-                        <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
-                        <a href=""
-                            class="px-4 py-1 bg-[#2f3c97] text-xs text-white  hover:border-slate-300 border border-white rounded-sm">Get
-                            Deal</a>
-                    </div>
-                </div>
 
-            </div>
-            <div
-                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3">
-                <div class="relative h-64">
-                    <img class="w-full h-full  z-20" src="./images/shirt1.jpg" alt="product image">
-                    <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
-                    <i
-                        class="fa-solid fa-cart-plus absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
-                    <h4
-                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07]">
-                        Price ₹ 934</h4>
-                </div>
-                <div class="p-3">
-                    <div class="flex justify-between">
-                        <div class="text-sm text-slate-600"> Sale Profit <br>
-                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 47.07</span>
-                        </div>
-                        <div class="text-sm text-slate-600">Referral Profit <br>
-                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.35</span>
-                        </div>
-                    </div>
-                    <h3 class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4">Men Rust
-                        Brown Pure jacket with woolen </h3>
-                    <div class="flex justify-between items-center">
-                        <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
-                        <a href=""
-                            class="px-4 py-1 bg-[#2f3c97] text-xs text-white  hover:border-slate-300 border border-white rounded-sm">Get
-                            Deal</a>
-                    </div>
-                </div>
 
-            </div>
-            <div
-                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3">
-                <div class="relative h-64">
-                    <img class="w-full h-full  z-20" src="./images/shirt2.jpg" alt="product image">
-                    <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
-                    <i
-                        class="fa-solid fa-cart-plus absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
-                    <h4
-                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07]">
-                        Price ₹ 934</h4>
-                </div>
-                <div class="p-3">
-                    <div class="flex justify-between">
-                        <div class="text-sm text-slate-600"> Sale Profit <br>
-                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 47.07</span>
-                        </div>
-                        <div class="text-sm text-slate-600">Referral Profit <br>
-                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 2.35</span>
-                        </div>
-                    </div>
-                    <h3 class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4">Men Rust
-                        Brown Pure jacket with woolen </h3>
-                    <div class="flex justify-between items-center">
-                        <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
-                        <a href=""
-                            class="px-4 py-1 bg-[#2f3c97] text-xs text-white  hover:border-slate-300 border border-white rounded-sm">Get
-                            Deal</a>
-                    </div>
-                </div>
-
-            </div>
-            <div
-                class="lg:w-[19%] md:w-[32%] sm:w-[48%] w-[98%] rounded-lg overflow-hidden shadow-lg border mx-[0.5%] my-3">
-                <div class="relative h-64">
-                    <img class="w-full h-full  z-20" src="./images/jacket1.jpg" alt="product image">
-                    <img class="absolute top-2 left-2 w-10" src="./images/myntraLogo.png" alt="logo">
-                    <i
-                        class="fa-solid fa-cart-plus absolute top-2 right-2 w-9 h-9 cursor-pointer z-20 rounded-full bg-[#eee] text-[#4252ce] flex justify-center items-center"></i>
-                    <h4
-                        class="text-center font-semibold text-white rounded-sm absolute bottom-0 left-0 px-3 py-1 bg-[#eb6a07]">
-                        Price ₹ 934</h4>
-                </div>
-                <div class="p-3">
-                    <div class="flex justify-between">
-                        <div class="text-sm text-slate-600"> Sale Profit <br>
-                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 457.07</span>
-                        </div>
-                        <div class="text-sm text-slate-600">Referral Profit <br>
-                            <span class="font-semibold text-[#eb6a07] text-[16px]"> ₹ 23.35</span>
-                        </div>
-                    </div>
-                    <h3 class="overflow-hidden whitespace-nowrap overflow-ellipsis text-sm text-slate-600 my-4">Men Rust
-                        Brown Pure jacket with woolen </h3>
-                    <div class="flex justify-between items-center">
-                        <a href="" class="px-4 py-1 border text-xs text-black rounded-sm">Share Now</a>
-                        <a href=""
-                            class="px-4 py-1 bg-[#2f3c97] text-xs text-white  hover:border-slate-300 border border-white rounded-sm">Get
-                            Deal</a>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </section>
 
@@ -700,13 +783,56 @@
             </div>
             <a href="javascript:void(0)" class="redirectBtn text-blue-500 underline text-sm">Continue Without Profit</a>
         </div>
-        <div class="bg-white hidden loadingPopup box lg:w-2/5 md:w-2/4 sm:w-3/4 w-[95%] p-0 text-center rounded-md relative">
+        <div
+            class="bg-white hidden loadingPopup box lg:w-2/5 md:w-2/4 sm:w-3/4 w-[95%] p-0 text-center rounded-md relative">
             <img class="w-2/4 m-auto" src="./images/loading.gif" alt="loader">
         </div>
     </section>
 
 
-
+    <aside
+        class="cartSideBar bg-white p-2 fixed top-0 right-[-270px] z-[99] w-[250px] h-full flex flex-col justify-between transition-all ease-in-out">
+        <div>
+            <div class="CartHeader flex justify-between items-center border-b border-slate-300 pb-1">
+                <h2 class="text-sm"> <i class="fa-solid fa-cart-plus mr-1"></i>Your Cart</h2>
+                <i class="fa-solid fa-xmark closeCartSideBar cursor-pointer p-1"></i>
+            </div>
+            <div class="cartBody my-3  overflow-y-scroll">
+            </div>
+        </div>
+        <div class="cartFooter border-t">
+            <div class="coupon p-1">
+                <span class="text-sm pl-2">Have a coupn code ? </span>
+                <div class="flex mt-1">
+                    <input type="text" name="" class="pl-2  outline-none shadow-none border-b text-sm"
+                        placeholder="Enter Coupon Code Here">
+                    <button class="bg-[#2f3c97]  cursor-pointer text-white px-5 py-0 text-xs rounded-sm ">Apply</button>
+                </div>
+            </div>
+            <div class="balance  mt-2">
+                <ul class="text-xs">
+                    <li class="flex justify-between capitalize py-1">subtotal <strong>₹ <span
+                                class="subtotal">0</span></strong></li>
+                    <li class="flex justify-between capitalize py-1">shipping <strong>₹ <span
+                                class="shipping">0</span></strong></li>
+                    <li class="flex justify-between capitalize py-1">tax <strong>₹ <span class="tax">0</span></strong>
+                    </li>
+                    <li class="flex justify-between capitalize py-1">discounts <strong>₹ <span
+                                class="discounts">0</span></strong></li>
+                </ul>
+                <p class="flex justify-between capitalize border-t text-sm">Total <strong>₹ <span
+                            class="Total">0</span></strong></p>
+            </div>
+        </div>
+    </aside>
+    <div
+        class="cartHangingBtn fixed bottom-5 right-5 cursor-pointer z-[98] rounded-full flex justify-center items-center w-10 h-10 text-xs bg-[#eb6a07] text-white p-1">
+        <div class="w-full text-center mr-1 block relative">
+            <i class="fa-solid fa-cart-shopping text-lg"></i>
+            <span
+                class="absolute top-[-12px] right-[-7px] rounded-full flex justify-center items-center w-4 h-4 text-[10px] bg-[#2f3c97] text-white cartItemCount">0</span>
+        </div>
+    </div>
 
 
     <footer class="bg-[#2f3c97] px-[5%] py-12">
@@ -775,7 +901,9 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <script src="./js/header-footer.js"></script>
+    <script src="./js//add-to-cart-sidebar.js"></script>
     <script src="./js/product-details.js"></script>
 </body>
 
